@@ -56,12 +56,14 @@
       </div>
     </header>
     <main>
+      <!--hero-box-->
       <section class="section hero">
         <div class="container background-hero">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" data-modal-open class="hero-button">Заказать услугу</button>
         </div>
       </section>
+      <!--section-feature-->
       <section class="section-feature section">
         <!--<h2>Особенности</h2>-->
         <ul class="container feat-cont list">
@@ -115,34 +117,45 @@
           </li>
         </ul>
       </section>
+      <!--section-work-->
       <section class="section">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list our-work">
-            <li class="example">
+            <li>
+              <div class="example">
               <img
                 src="./images/about/we-can-do1.jpg"
                 alt="Создание десктопных приложений"
                 width="370"
               />
+              <h3 class="text-work">Десктопные приложения</h3>
+              </div>
             </li>
-            <li class="example">
+            <li>
+              <div class="example">
               <img
                 src="./images/about/we-can-do2.jpg"
                 alt="Создание мобильных приложений"
                 width="370"
               />
+              <h3 class="text-work">Мобильные приложения</h3>
+              </div>
             </li>
-            <li class="example">
+            <li>
+              <div class="example">
               <img
                 src="./images/about/we-can-do3.jpg"
                 alt="Создание приложений для планшетов"
                 width="370"
               />
+              <h3 class="text-work">Дизайнерские решения</h3>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+      <!--section-member-->
       <section class="section-member section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
@@ -314,7 +327,7 @@
           </ul>
         </div>
       </section>
-      <!--Постоянные клиенты-->
+      <!--Clients-->
       <section class="section">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
@@ -377,6 +390,7 @@
         </div>
       </section>
     </main>
+    <!--footer-->
     <footer class="footer">
       <div class="container footer-container">
         <div class="">
@@ -434,5 +448,16 @@
         </div>
       </div>
     </footer>
+    <!--Modal-window-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close-butt">
+          <svg class="close-button" width="17" height="17">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
